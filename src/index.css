@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #09090B;
+    color: #F4F4F5;
+  }
+}
+
+.font-anton {
+  font-family: 'Anton', sans-serif;
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-display-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.crime-border {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.crime-border-red {
+  border: 1px solid rgba(220, 38, 38, 0.4);
+}
+
+.red-glow {
+  box-shadow: 0 0 16px rgba(220, 38, 38, 0.25);
+}
+
+.stamp-confidential {
+  border: 2px solid #DC2626;
+  color: #DC2626;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  display: inline-block;
+  padding: 2px 8px;
+  transform: rotate(-2deg);
+}
+
+.sidebar-heading {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #71717A;
+  font-weight: 800;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom dossier scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #DC2626;
+}
+
+/* Investigative radial dot & grid background */
+.bg-grid-noir {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.bg-dot-radial {
+  background-image: radial-gradient(#27272A 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@keyframes pulseRed {
+  0%, 100% { 
+    opacity: 0.85;
+    filter: drop-shadow(0 0 6px rgba(220, 38, 38, 0.6));
+  }
+  50% { 
+    opacity: 1;
+    filter: drop-shadow(0 0 14px rgba(220, 38, 38, 0.9));
+  }
+}
+
+.path-glow-red {
+  animation: pulseRed 2s infinite ease-in-out;
+}
+
+

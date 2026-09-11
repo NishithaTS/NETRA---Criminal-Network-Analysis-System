@@ -1,0 +1,6 @@
+{
+  "name": "NETRA - Criminal Network Analysis System",
+  "description": "AI-Powered Criminal Network Analysis & Knowledge Graph Investigation Platform for SIH 2026 Problem Statement 26189.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
